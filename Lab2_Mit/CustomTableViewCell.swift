@@ -16,13 +16,13 @@ class CustomTableViewCell: UITableViewCell {
     }()
     
     lazy var userImage: UIImageView = {
-        let userImage = UIImageView(frame: CGRect(x: 4, y: 6, width: 108, height: 108))
+        let userImage = UIImageView(frame: CGRect(x: 4, y: 6, width: 104, height: 104))
         userImage.contentMode = .scaleAspectFit
         return userImage
     }()
     
     lazy var namelbl: UILabel = {
-        let lbl = UILabel(frame: CGRect(x: 116, y: 8, width: backView.frame.width - 116, height: 30))
+        let lbl = UILabel(frame: CGRect(x: 116, y: 7, width: backView.frame.width - 116, height: 30))
         lbl.textAlignment = .left
         lbl.font = UIFont.boldSystemFont(ofSize: 18)
         return lbl
@@ -44,6 +44,8 @@ class CustomTableViewCell: UITableViewCell {
         backgroundColor = UIColor.clear
         backView.layer.cornerRadius = 5
         backView.clipsToBounds = true
+        userImage.layer.cornerRadius = 52
+        userImage.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

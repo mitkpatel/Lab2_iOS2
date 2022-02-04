@@ -90,7 +90,11 @@ class HomeVC: UIViewController {
         title = "Home"
 
         userArr.append(UserModel(user: UIImage.init(named: "Charlize Theron")!, name: "Mit", age: "24"))
-        userArr.append(UserModel(user: UIImage.init(named: "Charlize Theron")!, name: "Amber Heard", age: "32"))
+        userArr.append(UserModel(user: UIImage.init(named: "Emma Stone")!, name: "Emma Stone", age: "30"))
+        userArr.append(UserModel(user: UIImage.init(named: "Amber Heard")!, name: "Angelina Jolie", age: "43"))
+        userArr.append(UserModel(user: UIImage.init(named: "Jennifer Lawrence")!, name: "Scarlett Johansson", age: "34"))
+        userArr.append(UserModel(user: UIImage.init(named: "Angelina Jolie")!, name: "Jennifer Lawrence", age: "28"))
+        userArr.append(UserModel(user: UIImage.init(named: "Scarlett Johansson")!, name: "Charlize Theron", age: "43"))
         userArr.append(UserModel(user: UIImage.init(named: "Emma Stone")!, name: "Emma Stone", age: "30"))
         userArr.append(UserModel(user: UIImage.init(named: "Amber Heard")!, name: "Angelina Jolie", age: "43"))
         userArr.append(UserModel(user: UIImage.init(named: "Jennifer Lawrence")!, name: "Scarlett Johansson", age: "34"))
