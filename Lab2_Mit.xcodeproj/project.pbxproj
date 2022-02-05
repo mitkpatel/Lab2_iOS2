@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B31604AF27AC738B00847829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31604AE27AC738B00847829 /* Assets.xcassets */; };
+		B391F07127ADE41D0017F943 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B391F07027ADE41D0017F943 /* CustomCollectionViewCell.swift */; };
 		B39CAE2927A512240008B9B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39CAE2827A512240008B9B7 /* AppDelegate.swift */; };
 		B39CAE2B27A512240008B9B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39CAE2A27A512240008B9B7 /* SceneDelegate.swift */; };
 		B39CAE2D27A512240008B9B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39CAE2C27A512240008B9B7 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		B31604AE27AC738B00847829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Lab2_Mit/Assets.xcassets; sourceTree = "<group>"; };
+		B391F07027ADE41D0017F943 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		B39CAE2527A512240008B9B7 /* Lab2_Mit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab2_Mit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39CAE2827A512240008B9B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39CAE2A27A512240008B9B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				B39CAE3327A512250008B9B7 /* LaunchScreen.storyboard */,
 				B39CAE3627A512250008B9B7 /* Info.plist */,
 				B3AD466927AB5250002AD239 /* CustomTableViewCell.swift */,
+				B391F07027ADE41D0017F943 /* CustomCollectionViewCell.swift */,
 			);
 			path = Lab2_Mit;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39CAE2D27A512240008B9B7 /* ViewController.swift in Sources */,
+				B391F07127ADE41D0017F943 /* CustomCollectionViewCell.swift in Sources */,
 				B39CAE2927A512240008B9B7 /* AppDelegate.swift in Sources */,
 				B3AD466A27AB5250002AD239 /* CustomTableViewCell.swift in Sources */,
 				B39CAE2B27A512240008B9B7 /* SceneDelegate.swift in Sources */,
