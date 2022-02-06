@@ -28,13 +28,31 @@ class ViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         return button
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .systemBlue
+        setUpConstraints()
         view.addSubview(button)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+    }
+    
+    private let backgroundImage: UIImageView = {
+        let background = UIImageView()
+        background.image = UIImage(named: "images")
+        return background
+    }()
+    
+    func setUpConstraints(){
+        view.addSubview(backgroundImage)
+        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
+        backgroundImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        backgroundImage.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        backgroundImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        backgroundImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        backgroundImage.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
     override func viewDidLayoutSubviews() {
@@ -186,11 +204,21 @@ class FavoriteVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
 }
 
 class AboutVC: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userName = UILabel.init()
+                userName.frame = CGRect(x: 10.0, y: 40.0, width: UIScreen.main.bounds.size.width - 20.0, height: 100.0)
+                userName.text = "Lab2 - Mit Patel"
+                userName.font = UIFont(name: "verdana", size: 20.0)
+                userName.textAlignment = .left
+                userName.textColor = .blue
+                userName.numberOfLines = 0
+                self.view.addSubview(userName)
         view.backgroundColor = .lightGray
         title = "About"
     }
+    
 }
 
 
